@@ -22,9 +22,11 @@ const Gallery = () => {
     <div className="gallery grid-columns-5 p-3">
       {fotos.map((foto) => (
         <div key={foto.id} className="fotos">
+          <div className="icono">
           <img onClick={() => changeLiked (foto.id)} src={foto.src.medium} alt="" width='300px' height='300px' />
-          <p>{foto.alt}</p>
           <IconHeart filled={foto.liked}/>
+          </div>
+          <p>{foto.alt}</p>
         </div>
       ))}
       
