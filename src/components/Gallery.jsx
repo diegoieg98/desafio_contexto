@@ -24,7 +24,7 @@ const Gallery = () => {
         <div key={foto.id} className="fotos">
           <img onClick={() => changeLiked (foto.id)} src={foto.src.medium} alt="" width='300px' height='300px' />
           <p>{foto.alt}</p>
-          <IconHeart filled={foto.liked} changeLiked={changeLiked}/>
+          <IconHeart filled={foto.liked}/>
         </div>
       ))}
       

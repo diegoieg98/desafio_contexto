@@ -83,3 +83,6 @@ h1{
   justify-content: center;
   color: #43a047;
 }
+img{
+  border-radius: 15px;
+}
